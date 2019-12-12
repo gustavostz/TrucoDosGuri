@@ -1,0 +1,1 @@
+export {Jogo} from "./jogo/jogo.screen"

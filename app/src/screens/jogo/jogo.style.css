@@ -1,0 +1,63 @@
+.body {
+    height: 100vh;
+    padding: 2%;
+    background-image: url("../../assets/img/jogo/fundo-truco.jpg");
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-mao {
+    min-height: 20%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.adversario-inversao {
+    transform: rotateZ(180deg);
+}
+
+.container-meio {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.container-baralho{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-baralho img{
+    width: 35%;
+    height: 45%;
+}
+
+.container-cartas-jogadas{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-carta-jogada {
+    display: flex;
+    width: 50%;
+    height: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-carta-jogada-dragging {
+    background: rgba(0, 156, 0, 0.2);
+}

@@ -1,0 +1,48 @@
+.container-carta{
+    margin: 0 -5px;
+}
+
+.container-carta img{
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.carta-torta-para-esquerda{
+    transform: translate(5%,2%) rotate3d(100, 100, -500, 10deg);
+
+    animation: mandar-carta-para-esquerda 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes mandar-carta-para-esquerda {
+    0% {
+        transform: translateX(90%) rotate3d(0, 0, 0, 0deg);
+    }
+
+    20%{
+        transform: translateX(90%) rotate3d(0, 0, 0, 0deg);
+    }
+
+    80% {
+        transform: translate(5%,2%) rotate3d(100, 100, -500, 10deg);
+    }
+}
+
+.carta-torta-para-direita{
+    transform: translate(-10%, 2%) rotate3d(100, 100, 500, 10deg);
+
+    animation: mandar-carta-para-direita 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes mandar-carta-para-direita {
+    0% {
+        transform: translateX(-90%) rotate3d(0, 0, 0, 0deg);
+    }
+
+    20%{
+        transform: translateX(-90%) rotate3d(0, 0, 0, 0deg);
+    }
+
+    80% {
+        transform: translate(-10%, 2%) rotate3d(100, 100, 500, 10deg);
+    }
+}

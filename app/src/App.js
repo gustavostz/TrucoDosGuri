@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import {Switch, Route} from "react-router-dom"
+import React, {Component} from 'react';
+import {Jogo} from "./screens";
 import './App.css';
+import {DndProvider} from 'react-dnd'
+import HTML5Backend from 'react-dnd-html5-backend'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <DndProvider backend={HTML5Backend}>
+                <Switch>
+                    <Route path="/" component={Jogo} exact/>
+                </Switch>
+            </DndProvider>
+        );
+    }
 }
 
 export default App;
