@@ -18,6 +18,8 @@ API:
 
 Instalar Python 3.8.1: https://www.python.org/ftp/python/3.8.1/python-3.8.1.exe
 
+Reiniciar o PC
+
 Instalar por Terminal flask 1.1.1: 
 
 ```pip3 install flask==1.1.1```
