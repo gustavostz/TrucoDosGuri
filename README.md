@@ -28,3 +28,4 @@ Instalar por Terminal Flask-Cors 3.0.8:
 
 APP:
 
+Problema ao inicializar
